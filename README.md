@@ -1,6 +1,6 @@
-# my_app
+# Flutter with MobX
 
-A new Flutter project.
+A new learning Flutter project.
 
 ## Getting Started
 
