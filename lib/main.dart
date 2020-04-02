@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
+import 'package:my_app/examples/RollDiceExample.dart';
 import 'package:my_app/stores/connectivity.store.dart';
 import 'package:my_app/examples/ConectivityExample.dart';
 import 'package:my_app/stores/counter.store.dart';
@@ -58,6 +59,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 )
               },
               child: Text("Connectivity Example"),
+            ),
+            FlatButton(
+              onPressed: () => {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => RollDiceExample()))
+              },
+              child: Text("Roll Dice"),
             )
           ],
         ),
