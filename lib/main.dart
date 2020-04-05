@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
+import 'package:my_app/examples/FormExample.dart';
 import 'package:my_app/examples/RollDiceExample.dart';
 import 'package:my_app/stores/connectivity.store.dart';
 import 'package:my_app/examples/ConectivityExample.dart';
@@ -66,6 +67,13 @@ class _MyHomePageState extends State<MyHomePage> {
                     MaterialPageRoute(builder: (context) => RollDiceExample()))
               },
               child: Text("Roll Dice"),
+            ),
+            FlatButton(
+              onPressed: () => {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => FormExample()))
+              },
+              child: Text("Login Form"),
             )
           ],
         ),
