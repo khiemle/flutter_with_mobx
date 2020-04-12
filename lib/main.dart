@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:my_app/examples/FormExample.dart';
 import 'package:my_app/examples/GithubReposExample.dart';
+import 'package:my_app/examples/GoogleMapExample.dart';
 import 'package:my_app/examples/RollDiceExample.dart';
 import 'package:my_app/stores/connectivity.store.dart';
 import 'package:my_app/examples/ConectivityExample.dart';
@@ -82,6 +83,13 @@ class _MyHomePageState extends State<MyHomePage> {
                     MaterialPageRoute(builder: (context) => GithubReposExample()))
               },
               child: Text("GitHub Repos"),
+            ),
+            FlatButton(
+              onPressed: () => {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => GoogleMapExample()))
+              },
+              child: Text("Google Map"),
             )
           ],
         ),
